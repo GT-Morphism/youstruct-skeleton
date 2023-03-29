@@ -17,7 +17,8 @@
 		"noImplicitThis": true,
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedIndexedAccess": true
-	}
+	},
+	"files": ["./node_modules/@skeletonlabs/skeleton/index.d.ts"]
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	//
 	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
