@@ -1,5 +1,16 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  '@fontsource/martel':
+    specifier: ^4.5.10
+    version: 4.5.10
+  '@fontsource/prompt':
+    specifier: ^4.5.10
+    version: 4.5.10
+  '@fontsource/quattrocento':
+    specifier: ^4.5.10
+    version: 4.5.10
+
 devDependencies:
   '@skeletonlabs/skeleton':
     specifier: ^1.1.0
@@ -295,6 +306,18 @@ packages:
     resolution: {integrity: sha512-x5vzdtOOGgFVDCUs81QRB2+liax8rFg3+7hqM+QhBG0/G3F1ZsoYl97UrqgHgQ9KKT7G6c4V+aTUCgu/n22v1A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fontsource/martel@4.5.10:
+    resolution: {integrity: sha512-Iounh6JREC0gUisxvmgAgDG+Z6BiJSb5aJRQzolmwEFKDE28ABeDUqb10YLlDH4kpwgA0s222xw+PyhbbdhNLg==}
+    dev: false
+
+  /@fontsource/prompt@4.5.10:
+    resolution: {integrity: sha512-S2GQ5Upo9XfZ8jruqmW9If+nS3MSM0CobysfzmAMgzhzBOQTWWOoNIUMrX5OMOliMtSA437X/ZK5f1TT8Rt6fQ==}
+    dev: false
+
+  /@fontsource/quattrocento@4.5.10:
+    resolution: {integrity: sha512-C1seOFxMpwDcZMbFGKZ7QFNVERK7pGlSrB7mtgXhCafsKsEMjs8++62nPHm9ZsN4uEPqtoW/XiNBgEKNX+Cklg==}
+    dev: false
 
   /@humanwhocodes/config-array@0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}

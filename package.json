@@ -32,5 +32,10 @@
 		"typescript": "^4.9.5",
 		"vite": "^4.2.1"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@fontsource/martel": "^4.5.10",
+		"@fontsource/prompt": "^4.5.10",
+		"@fontsource/quattrocento": "^4.5.10"
+	}
 }
