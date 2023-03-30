@@ -14,6 +14,9 @@
 	//#### IMPORT OF NPM PACKAGES ####
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from "@floating-ui/dom";
 
+	//#### IMPORT OF SVELTE/SVELTEKIT UTILITIES ####
+	import { page } from "$app/stores";
+
 	//#### IMPORT OF SKELETON COMPONENTS ####
 	import { storePopup } from "@skeletonlabs/skeleton";
 
@@ -30,6 +33,8 @@
 	//#### OTHER ####
 </script>
 
-<MainNavigation />
+{#if $page.url.pathname != "/verification-for-share"}
+	<MainNavigation />
+{/if}
 
 <slot />
