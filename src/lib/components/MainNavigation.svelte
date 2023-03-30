@@ -10,7 +10,7 @@
 
 	//#### ADAPT SKELETON COMPONENTS ####
 	let discoverConstructionMenu: PopupSettings = {
-		event: "click",
+		event: "focus-click",
 		target: "discoverConstructionMenu",
 		middleware: {
 			offset: 20,
@@ -18,7 +18,7 @@
 	};
 
 	let forTraineeMenu: PopupSettings = {
-		event: "click",
+		event: "focus-click",
 		target: "forTraineeMenu",
 		middleware: {
 			offset: 20,
@@ -26,7 +26,7 @@
 	};
 
 	let forStudentsMenu: PopupSettings = {
-		event: "click",
+		event: "focus-click",
 		target: "forStudentsMenu",
 		middleware: {
 			offset: 20,
