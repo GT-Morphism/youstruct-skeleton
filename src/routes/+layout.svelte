@@ -33,7 +33,7 @@
 	//#### OTHER ####
 </script>
 
-{#if $page.url.pathname != "/verification-for-share"}
+{#if $page.url.pathname != "/"}
 	<MainNavigation />
 {/if}
 

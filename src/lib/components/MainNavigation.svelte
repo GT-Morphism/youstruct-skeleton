@@ -44,7 +44,7 @@
 </script>
 
 <AppBar>
-	<svelte:fragment slot="lead"><a href="/">YouStruct</a></svelte:fragment>
+	<svelte:fragment slot="lead"><a href="/protected">YouStruct</a></svelte:fragment>
 	<svelte:fragment slot="trail">
 		<div class="relative">
 			<button class="btn variant-ghost-primary" use:popup={discoverConstructionMenu}
@@ -55,19 +55,19 @@
 					<SubNavigationCard
 						navCardHeading="Die Anfänge der Bauwelt"
 						navCardDescription="Wie wurde die Welt, wie wir sie heute kennen."
-						navCardUrl="/entdecke-die-baubranche/anfaenge-der-bauwelt"
+						navCardUrl="/protected/entdecke-die-baubranche/anfaenge-der-bauwelt"
 					/>
 
 					<SubNavigationCard
 						navCardHeading="Innovationen und Technik"
 						navCardDescription="Was sind die neuesten Highlights der Baubranche?"
-						navCardUrl="/entdecke-die-baubranche/innovationen-und-technik"
+						navCardUrl="/protected/entdecke-die-baubranche/innovationen-und-technik"
 					/>
 
 					<SubNavigationCard
 						navCardHeading="Anerkennung im Bau"
 						navCardDescription="Warum Du als Bauheld die Stütze der Zukunft bist!"
-						navCardUrl="/entdecke-die-baubranche/anerkennung-im-bau"
+						navCardUrl="/protected/entdecke-die-baubranche/anerkennung-im-bau"
 					/>
 				</div>
 			</div>
@@ -79,14 +79,14 @@
 					<SubNavigationCard
 						navCardHeading="Jobs A bis Z"
 						navCardDescription="Wie sehen Aufgaben und Entwicklungen im Job aus?"
-						navCardUrl="/fuer-azubis/jobs-a-bis-z"
+						navCardUrl="/protected/fuer-azubis/jobs-a-bis-z"
 						outlineColor="outline-secondary-900"
 					/>
 
 					<SubNavigationCard
 						navCardHeading="Theorie und Praxis"
 						navCardDescription="Lernmaterialien für Deine Theorie- und Praxisprüfung!"
-						navCardUrl="/fuer-azubis/theorie-und-praxis"
+						navCardUrl="/protected/fuer-azubis/theorie-und-praxis"
 						outlineColor="outline-secondary-900"
 					/>
 				</div>
@@ -99,21 +99,21 @@
 					<SubNavigationCard
 						navCardHeading="Jobs A bis Z"
 						navCardDescription="Wie sehen Aufgaben und Entwicklungen im Job aus?"
-						navCardUrl="/fuer-studenten/jobs-a-bis-z"
+						navCardUrl="/protected/fuer-studenten/jobs-a-bis-z"
 						outlineColor="outline-success-900"
 					/>
 
 					<SubNavigationCard
 						navCardHeading="Ein Tag im Leben als..."
 						navCardDescription="Menschen wie Du und ich stellen sich und ihren Alltag vor."
-						navCardUrl="/fuer-studenten/ein-tag-im-leben-als"
+						navCardUrl="/protected/fuer-studenten/ein-tag-im-leben-als"
 						outlineColor="outline-success-900"
 					/>
 
 					<SubNavigationCard
 						navCardHeading="Theorie und Praxis"
 						navCardDescription="Lernmaterialien für Deine Klausur und Praxishilfen!"
-						navCardUrl="/fuer-studenten/theorie-und-praxis"
+						navCardUrl="/protected/fuer-studenten/theorie-und-praxis"
 						outlineColor="outline-success-900"
 					/>
 				</div>
