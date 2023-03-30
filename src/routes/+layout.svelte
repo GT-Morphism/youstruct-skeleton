@@ -18,7 +18,7 @@
 	import { page } from "$app/stores";
 
 	//#### IMPORT OF SKELETON COMPONENTS ####
-	import { storePopup } from "@skeletonlabs/skeleton";
+	import { storePopup, Modal } from "@skeletonlabs/skeleton";
 
 	//#### ADAPT SKELETON COMPONENTS ####
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
@@ -33,7 +33,9 @@
 	//#### OTHER ####
 </script>
 
-{#if $page.url.pathname != "/"}
+<Modal />
+
+{#if $page.url.pathname != "/" && $page.error?.message != "Not Found"}
 	<MainNavigation />
 {/if}
 
