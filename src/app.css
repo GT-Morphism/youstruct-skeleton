@@ -1,0 +1,8 @@
+button:focus,
+a:focus {
+	@apply outline-none;
+}
+button:focus-visible,
+a:focus-visible {
+	@apply outline-2 outline-offset-2 outline-success-500;
+}
