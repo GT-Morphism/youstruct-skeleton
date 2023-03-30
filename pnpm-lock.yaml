@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@floating-ui/dom':
+    specifier: ^1.2.5
+    version: 1.2.5
   '@fontsource/martel':
     specifier: ^4.5.10
     version: 4.5.10
@@ -306,6 +309,16 @@ packages:
     resolution: {integrity: sha512-x5vzdtOOGgFVDCUs81QRB2+liax8rFg3+7hqM+QhBG0/G3F1ZsoYl97UrqgHgQ9KKT7G6c4V+aTUCgu/n22v1A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@floating-ui/core@1.2.5:
+    resolution: {integrity: sha512-qrcbyfnRVziRlB6IYwjCopYhO7Vud750JlJyuljruIXcPxr22y8zdckcJGsuOdnQ639uVD1tTXddrcH3t3QYIQ==}
+    dev: false
+
+  /@floating-ui/dom@1.2.5:
+    resolution: {integrity: sha512-+sAUfpQ3Frz+VCbPCqj+cZzvEESy3fjSeT/pDWkYCWOBXYNNKZfuVsHuv8/JO2zze8+Eb/Q7a6hZVgzS81fLbQ==}
+    dependencies:
+      '@floating-ui/core': 1.2.5
+    dev: false
 
   /@fontsource/martel@4.5.10:
     resolution: {integrity: sha512-Iounh6JREC0gUisxvmgAgDG+Z6BiJSb5aJRQzolmwEFKDE28ABeDUqb10YLlDH4kpwgA0s222xw+PyhbbdhNLg==}

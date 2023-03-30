@@ -34,6 +34,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@floating-ui/dom": "^1.2.5",
 		"@fontsource/martel": "^4.5.10",
 		"@fontsource/prompt": "^4.5.10",
 		"@fontsource/quattrocento": "^4.5.10"
