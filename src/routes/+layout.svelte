@@ -21,6 +21,7 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	//#### IMPORT OF CUSTOM COMPONENTS ####
+	import MainNavigation from "$lib/components/MainNavigation.svelte";
 
 	//#### ADAPT CUSTOM COMPONENTS ####
 
@@ -28,5 +29,7 @@
 
 	//#### OTHER ####
 </script>
+
+<MainNavigation />
 
 <slot />
