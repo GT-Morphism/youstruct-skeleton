@@ -12,10 +12,13 @@
 	import "../app.css";
 
 	//#### IMPORT OF NPM PACKAGES ####
+	import { computePosition, autoUpdate, flip, shift, offset, arrow } from "@floating-ui/dom";
 
 	//#### IMPORT OF SKELETON COMPONENTS ####
+	import { storePopup } from "@skeletonlabs/skeleton";
 
 	//#### ADAPT SKELETON COMPONENTS ####
+	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	//#### IMPORT OF CUSTOM COMPONENTS ####
 
