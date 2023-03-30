@@ -4,7 +4,7 @@
 	//#### IMPORT OF NPM PACKAGES ####
 
 	//#### IMPORT OF SKELETON COMPONENTS ####
-	import { AppBar, popup } from "@skeletonlabs/skeleton";
+	import { AppBar, LightSwitch, popup } from "@skeletonlabs/skeleton";
 
 	import type { PopupSettings } from "@skeletonlabs/skeleton";
 
@@ -119,5 +119,6 @@
 				</div>
 			</div>
 		</div>
+		<LightSwitch />
 	</svelte:fragment>
 </AppBar>
