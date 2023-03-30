@@ -1,13 +1,14 @@
 <script lang="ts">
-	// Your selected Skeleton theme:
-	import "@skeletonlabs/skeleton/themes/theme-skeleton.css";
+	import "@fontsource/martel";
+	import "@fontsource/quattrocento";
+	// Custom Skeleton theme:
+	import "../theme.postcss";
 
 	// This contains the bulk of Skeletons required styles:
 	import "@skeletonlabs/skeleton/styles/all.css";
 
 	// Finally, your application's global stylesheet (sometimes labeled 'app.css')
 	import "../app.css";
-	import { AppBar, LightSwitch } from "@skeletonlabs/skeleton";
 </script>
 
 <slot />
