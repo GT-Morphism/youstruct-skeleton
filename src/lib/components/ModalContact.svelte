@@ -1,9 +1,17 @@
 <script lang="ts">
+	export let parent;
 	import { fly } from "svelte/transition";
+	import { superForm } from "sveltekit-superforms/client";
+	import SuperDebug from "sveltekit-superforms/client/SuperDebug.svelte";
 	import { RadioGroup, RadioItem } from "@skeletonlabs/skeleton";
+	import { enhance } from "$app/forms";
 
-	let wantsToBeContactedWith: string = "email";
+	let wantsToBeContactedWith: string = "E-Mail";
+
+	const { form } = superForm(parent.data);
 </script>
+
+<SuperDebug data={$form} />
 
 <form
 	transition:fly={{
@@ -12,6 +20,7 @@
 	class="card mx-auto flex w-full max-w-2xl flex-col gap-y-4 p-10 outline outline-1 outline-primary-500"
 	action="?/manageContactForm"
 	method="POST"
+	use:enhance
 >
 	<h2 class="text-center !text-5xl">
 		<span class="text-primary-500"> Bautalente </span> sind ein Gespräch entfernt
@@ -28,6 +37,7 @@
 				class="w-full rounded-full bg-surface-900 p-3 outline outline-2 outline-primary-500"
 				type="text"
 				required
+				bind:value={$form.contactName}
 				aria-required="true"
 				placeholder="Max Mustermann"
 				name="contactName"
@@ -44,24 +54,25 @@
 				<RadioItem
 					bind:group={wantsToBeContactedWith}
 					name="wantsToBeContactedWith"
-					value="email"
+					value="E-Mail"
 					title="Per E-mail">Per E-Mail</RadioItem
 				>
 				<RadioItem
 					bind:group={wantsToBeContactedWith}
 					name="wantsToBeContactedWith"
-					value="phone"
+					value="Telefonnummer"
 					title="Per Anruf">Per Anruf</RadioItem
 				>
 			</RadioGroup>
 		</div>
-		{#if wantsToBeContactedWith == "email"}
+		{#if wantsToBeContactedWith == "E-Mail"}
 			<div class="text-primary-300">
 				<label class="mb-2 text-sm" for="contactEmail"> Ihre E-Mail Adresse </label>
 				<input
 					class="w-full rounded-full bg-surface-900 p-3 outline outline-2 outline-primary-500"
 					type="email"
 					required
+					bind:value={$form.contactEmail}
 					aria-required="true"
 					placeholder="max@mustermann.de"
 					name="contactEmail"
@@ -75,6 +86,7 @@
 					class="w-full rounded-full bg-surface-900 p-3 outline outline-2 outline-primary-500"
 					type="tel"
 					required
+					bind:value={$form.contactPhoneNumber}
 					aria-required="true"
 					placeholder="+49 36843 60 26"
 					name="contactPhoneNumber"
@@ -89,6 +101,7 @@
 				class="w-full bg-surface-900 p-3 outline outline-2 outline-primary-500 rounded-container-token"
 				placeholder="Ich möchte endlich solide Handwerker in meinem Team haben."
 				rows="5"
+				bind:value={$form.contactMessage}
 				name="contactMessage"
 				id="contactMessage"
 			/>
