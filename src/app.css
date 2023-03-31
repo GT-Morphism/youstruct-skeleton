@@ -8,3 +8,27 @@ button:focus,
 a:focus-visible {
 	@apply outline-2 outline-success-500;
 }
+
+button.focus-primary:focus-visible,
+button.focus-primary:focus-visible,
+a.focus-primary:focus-visible {
+	@apply outline-2 outline-primary-500;
+}
+
+button.focus-secondary:focus-visible,
+button.focus-secondary:focus-visible,
+a.focus-secondary:focus-visible {
+	@apply outline-2 outline-secondary-500;
+}
+
+button.focus-success:focus-visible,
+button.focus-success:focus-visible,
+a.focus-success:focus-visible {
+	@apply outline-2 outline-success-500;
+}
+
+button.focus-error:focus-visible,
+button.focus-error:focus-visible,
+a.focus-error:focus-visible {
+	@apply outline-2 outline-error-500;
+}
