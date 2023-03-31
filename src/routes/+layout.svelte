@@ -31,12 +31,12 @@
 	//#### ADAPT CURRENT COMPONENT/PAGE/LAYOUT ####
 
 	//#### OTHER ####
+	export let data;
 </script>
 
-<Modal />
+<Modal data={data.contactForm} />
 
 {#if $page.url.pathname != "/" && $page.error?.message != "Not Found"}
 	<MainNavigation />
 {/if}
-
 <slot />
