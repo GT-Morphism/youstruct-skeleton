@@ -2,13 +2,18 @@
 	export let parent;
 	import { fly } from "svelte/transition";
 	import { superForm } from "sveltekit-superforms/client";
-	import SuperDebug from "sveltekit-superforms/client/SuperDebug.svelte";
-	import { RadioGroup, RadioItem } from "@skeletonlabs/skeleton";
-	import { enhance } from "$app/forms";
+	import { RadioGroup, RadioItem, modalStore } from "@skeletonlabs/skeleton";
 
 	let wantsToBeContactedWith: string = "E-Mail";
 
-	const { form } = superForm(parent.data);
+	let { form, enhance, errors } = superForm(parent.data, {
+		async onUpdated({ form }) {
+			if (form.valid) {
+				form.data = {};
+				modalStore.close();
+			}
+		},
+	});
 </script>
 
 <form
