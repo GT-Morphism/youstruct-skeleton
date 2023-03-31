@@ -4,9 +4,9 @@
 	//#### IMPORT OF NPM PACKAGES ####
 
 	//#### IMPORT OF SKELETON COMPONENTS ####
-	import { AppBar, LightSwitch, popup } from "@skeletonlabs/skeleton";
+	import { AppBar, LightSwitch, popup, modalStore } from "@skeletonlabs/skeleton";
 
-	import type { PopupSettings } from "@skeletonlabs/skeleton";
+	import type { PopupSettings, ModalComponent, ModalSettings } from "@skeletonlabs/skeleton";
 
 	//#### ADAPT SKELETON COMPONENTS ####
 	let discoverConstructionMenu: PopupSettings = {
@@ -33,8 +33,18 @@
 		},
 	};
 
+	function modalContact(): void {
+		const c: ModalComponent = { ref: ModalContact };
+		const d: ModalSettings = {
+			type: "component",
+			component: c,
+		};
+		modalStore.trigger(d);
+	}
+
 	//#### IMPORT OF CUSTOM COMPONENTS ####
 	import SubNavigationCard from "./SubNavigationCard.svelte";
+	import ModalContact from "./ModalContact.svelte";
 
 	//#### ADAPT CUSTOM COMPONENTS ####
 
@@ -44,11 +54,15 @@
 </script>
 
 <AppBar>
-	<svelte:fragment slot="lead"><a href="/protected">YouStruct</a></svelte:fragment>
+	<svelte:fragment slot="lead"
+		><a class="focus-primary" href="/protected">YouStruct</a></svelte:fragment
+	>
 	<svelte:fragment slot="trail">
+		<!-- Entdecke die Baubranche -->
 		<div class="relative">
-			<button class="btn variant-ghost-primary" use:popup={discoverConstructionMenu}
-				>Entdecke die Baubranche</button
+			<button
+				class="focus-primary p-2 transition-all hover:variant-ghost-primary"
+				use:popup={discoverConstructionMenu}>Entdecke die Baubranche</button
 			>
 			<div data-popup="discoverConstructionMenu">
 				<div class="flex w-60 flex-col gap-y-4">
@@ -72,8 +86,12 @@
 				</div>
 			</div>
 		</div>
+		<!-- Für Azubis -->
 		<div class="relative">
-			<button class="btn variant-ghost-primary" use:popup={forTraineeMenu}>Für Azubis</button>
+			<button
+				class="focus-secondary p-2 transition-all hover:variant-ghost-secondary"
+				use:popup={forTraineeMenu}>Für Azubis</button
+			>
 			<div data-popup="forTraineeMenu">
 				<div class="flex w-60 flex-col gap-y-4">
 					<SubNavigationCard
@@ -92,8 +110,12 @@
 				</div>
 			</div>
 		</div>
+		<!-- Für Studenten -->
 		<div class="relative">
-			<button class="btn variant-ghost-primary" use:popup={forStudentsMenu}>Für Studenten</button>
+			<button
+				class="focus-success p-2 transition-all hover:variant-ghost-success"
+				use:popup={forStudentsMenu}>Für Studenten</button
+			>
 			<div data-popup="forStudentsMenu">
 				<div class="flex w-60 flex-col gap-y-4">
 					<SubNavigationCard
@@ -119,6 +141,13 @@
 				</div>
 			</div>
 		</div>
+		<!-- Über Uns -->
+		<a class="focus-error p-2 transition-all hover:variant-ghost-error" href="/protected/ueber-uns"
+			>Über Uns</a
+		>
+		<!-- Kontakt -->
+		<button class="focus-primary btn variant-ghost-primary" on:click={modalContact}>Kontakt</button>
+		<!-- Light Switch -->
 		<LightSwitch />
 	</svelte:fragment>
 </AppBar>
