@@ -11,8 +11,6 @@
 	const { form } = superForm(parent.data);
 </script>
 
-<SuperDebug data={$form} />
-
 <form
 	transition:fly={{
 		duration: 500,
