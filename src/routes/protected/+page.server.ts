@@ -1,20 +1,36 @@
 import { DISCORD_WEBHOOK_URL } from "$env/static/private";
-import { redirect } from "@sveltejs/kit";
+
+import { fail } from "@sveltejs/kit";
 import type { Actions } from "./$types";
 
-export const actions: Actions = {
-	manageContactForm: async ({ request }) => {
-		const formData = await request.formData();
+import { z } from "zod";
+import { superValidate } from "sveltekit-superforms/server";
 
-		const contactName = formData.get("contactName");
-		const wantsToBeContactedWith = formData.get("wantsToBeContactedWith");
+const contactSchema = z.object({
+	contactName: z.string().min(5),
+	contactEmail: z.string().email().optional(),
+	wantsToBeContactedWith: z.enum(["E-Mail", "Telefonnummer"]),
+	contactPhoneNumber: z.string().optional(),
+	contactMessage: z.string().optional(),
+});
+
+export const actions: Actions = {
+	manageContactForm: async (event) => {
+		const form = await superValidate(event, contactSchema);
+
+		if (!form.valid) {
+			console.log("Inside !form.valid");
+			console.log(form);
+			return fail(400, { form });
+		}
+
+		const contactName = form.data.contactName;
+		const wantsToBeContactedWith = form.data.wantsToBeContactedWith;
 
 		const contactInfo =
-			wantsToBeContactedWith == "email"
-				? formData.get("contactEmail")
-				: formData.get("contactPhoneNumber");
+			wantsToBeContactedWith == "E-Mail" ? form.data.contactEmail : form.data.contactPhoneNumber;
 
-		const contactMessage = formData.get("contactMessage");
+		const contactMessage = form.data.contactMessage;
 
 		const embed = {
 			color: 5351105,
@@ -35,6 +51,6 @@ export const actions: Actions = {
 			}),
 		});
 
-		throw redirect(303, "/protected");
+		return { form };
 	},
 };
