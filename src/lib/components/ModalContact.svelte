@@ -16,7 +16,7 @@
 		duration: 500,
 	}}
 	class="card mx-auto flex w-full max-w-2xl flex-col gap-y-4 p-10 outline outline-1 outline-primary-500"
-	action="?/manageContactForm"
+	action="/protected?/manageContactForm"
 	method="POST"
 	use:enhance
 >
