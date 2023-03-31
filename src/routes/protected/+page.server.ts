@@ -16,21 +16,23 @@ const contactSchema = z.object({
 
 export const actions: Actions = {
 	manageContactForm: async (event) => {
-		const form = await superValidate(event, contactSchema);
+		const contactForm = await superValidate(event, contactSchema);
 
-		if (!form.valid) {
-			console.log("Inside !form.valid");
-			console.log(form);
-			return fail(400, { form });
+		if (!contactForm.valid) {
+			console.log("Inside !contactForm.valid");
+			console.log(contactForm);
+			return fail(400, { contactForm });
 		}
 
-		const contactName = form.data.contactName;
-		const wantsToBeContactedWith = form.data.wantsToBeContactedWith;
+		const contactName = contactForm.data.contactName;
+		const wantsToBeContactedWith = contactForm.data.wantsToBeContactedWith;
 
 		const contactInfo =
-			wantsToBeContactedWith == "E-Mail" ? form.data.contactEmail : form.data.contactPhoneNumber;
+			wantsToBeContactedWith == "E-Mail"
+				? contactForm.data.contactEmail
+				: contactForm.data.contactPhoneNumber;
 
-		const contactMessage = form.data.contactMessage;
+		const contactMessage = contactForm.data.contactMessage;
 
 		const embed = {
 			color: 5351105,
@@ -51,6 +53,6 @@ export const actions: Actions = {
 			}),
 		});
 
-		return { form };
+		return { contactForm };
 	},
 };
