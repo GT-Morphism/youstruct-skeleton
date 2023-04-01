@@ -17,6 +17,7 @@
 			type="text"
 			name="shareUsername"
 			id="shareUsername"
+			autocomplete="username"
 		/>
 	</div>
 	<div class="text-primary-300">
@@ -26,6 +27,7 @@
 			type="password"
 			name="sharePassword"
 			id="sharePassword"
+			autocomplete="current-password"
 		/>
 	</div>
 	<button type="submit" class="btn variant-ghost-success"> Tamam Bruder, zeig mal. </button>
