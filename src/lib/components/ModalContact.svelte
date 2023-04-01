@@ -7,7 +7,7 @@
 	let wantsToBeContactedWith: string = "E-Mail";
 
 	let { form, enhance, errors } = superForm(parent.data, {
-		async onUpdated({ form }) {
+		onUpdated({ form }) {
 			if (form.valid) {
 				form.data = {};
 				modalStore.close();
