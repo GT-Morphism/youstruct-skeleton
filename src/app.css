@@ -35,3 +35,6 @@ a.focus-error:focus-visible {
 }
 
 /* #### UTILITY CLASSES #### */
+.invalid {
+	@apply outline-error-500;
+}
