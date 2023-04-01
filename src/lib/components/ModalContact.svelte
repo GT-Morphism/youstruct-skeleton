@@ -34,12 +34,13 @@
 	</p>
 	<!-- ACTUAL FORM -->
 	<div class="card flex flex-col gap-y-8 p-8">
-		<div class="text-primary-300">
+		<div data-isRequired class="text-primary-300">
 			<label class="mb-2 text-sm" for="contactName"> Ihr Name </label>
 			<input
 				class:invalid={$errors.contactName}
 				class="w-full rounded-full bg-surface-900 p-3 outline outline-2 outline-primary-500"
 				type="text"
+				minlength="1"
 				required
 				bind:value={$form.contactName}
 				aria-required="true"
@@ -73,7 +74,7 @@
 			</RadioGroup>
 		</div>
 		{#if wantsToBeContactedWith == "E-Mail"}
-			<div class="text-primary-300">
+			<div data-isRequired class="text-primary-300">
 				<label class="mb-2 text-sm" for="contactEmail"> Ihre E-Mail Adresse </label>
 				<input
 					class:invalid={$errors.contactEmail}
@@ -91,7 +92,7 @@
 				{/if}
 			</div>
 		{:else}
-			<div class="text-primary-300">
+			<div data-isRequired class="text-primary-300">
 				<label class="mb-2 text-sm" for="contactPhoneNumber"> Ihre Telefonnummer </label>
 				<input
 					class:invalid={$errors.contactPhoneNumber}
@@ -129,5 +130,10 @@
 	input:focus-visible,
 	textarea:focus-visible {
 		@apply outline outline-2 outline-success-500;
+	}
+
+	[data-isRequired] > label::after {
+		content: " ( erforderlich )";
+		@apply text-xs text-gray-400;
 	}
 </style>
