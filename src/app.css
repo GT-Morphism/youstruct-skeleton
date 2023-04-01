@@ -35,6 +35,14 @@ a.focus-error:focus-visible {
 }
 
 /* #### UTILITY CLASSES #### */
-.invalid {
-	@apply outline-error-500;
+.invalid > label {
+	@apply text-error-300;
+}
+
+.invalid > input {
+	@apply mb-2;
+}
+
+.invalid > p {
+	@apply text-sm text-error-300;
 }

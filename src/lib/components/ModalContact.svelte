@@ -34,10 +34,9 @@
 	</p>
 	<!-- ACTUAL FORM -->
 	<div class="card flex flex-col gap-y-8 p-8">
-		<div data-isRequired class="text-primary-300">
+		<div class:invalid={$errors.contactName} data-isRequired class="text-primary-300">
 			<label class="mb-2 text-sm" for="contactName"> Ihr Name </label>
 			<input
-				class:invalid={$errors.contactName}
 				class="w-full rounded-full bg-surface-900 p-3 outline outline-2 outline-primary-500"
 				type="text"
 				minlength="1"
@@ -49,7 +48,7 @@
 				id="contactName"
 			/>
 			{#if $errors.contactName}
-				{$errors.contactName}
+				<p>{$errors.contactName}</p>
 			{/if}
 		</div>
 		<div class="flex items-center justify-between text-primary-300">
@@ -74,39 +73,39 @@
 			</RadioGroup>
 		</div>
 		{#if wantsToBeContactedWith == "E-Mail"}
-			<div data-isRequired class="text-primary-300">
+			<div class:invalid={$errors.contactEmail} data-isRequired class="text-primary-300">
 				<label class="mb-2 text-sm" for="contactEmail"> Ihre E-Mail Adresse </label>
 				<input
-					class:invalid={$errors.contactEmail}
 					class="w-full rounded-full bg-surface-900 p-3 outline outline-2 outline-primary-500"
 					type="email"
 					required
 					bind:value={$form.contactEmail}
+					data-invalid={$errors.contactEmail}
 					aria-required="true"
 					placeholder="max@mustermann.de"
 					name="contactEmail"
 					id="contactEmail"
 				/>
 				{#if $errors.contactEmail}
-					{$errors.contactEmail}
+					<p>{$errors.contactEmail}</p>
 				{/if}
 			</div>
 		{:else}
-			<div data-isRequired class="text-primary-300">
+			<div class:invalid={$errors.contactPhoneNumber} data-isRequired class="text-primary-300">
 				<label class="mb-2 text-sm" for="contactPhoneNumber"> Ihre Telefonnummer </label>
 				<input
-					class:invalid={$errors.contactPhoneNumber}
 					class="w-full rounded-full bg-surface-900 p-3 outline outline-2 outline-primary-500"
 					type="tel"
 					required
 					bind:value={$form.contactPhoneNumber}
+					data-invalid={$errors.contactPhoneNumber}
 					aria-required="true"
-					placeholder="+49 36843 60 26"
+					placeholder="+49 305 80885027"
 					name="contactPhoneNumber"
 					id="contactPhoneNumber"
 				/>
 				{#if $errors.contactPhoneNumber}
-					{$errors.contactPhoneNumber}
+					<p>{$errors.contactPhoneNumber}</p>
 				{/if}
 			</div>
 		{/if}
