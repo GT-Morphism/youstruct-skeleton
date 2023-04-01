@@ -1,3 +1,4 @@
+/* #### BUTTON AND ANCHOR TAGS FOCUS */
 button:focus,
 a:focus {
 	@apply outline-none outline-offset-0;
@@ -32,3 +33,5 @@ button.focus-error:focus-visible,
 a.focus-error:focus-visible {
 	@apply outline-2 outline-error-500;
 }
+
+/* #### UTILITY CLASSES #### */
