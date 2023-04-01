@@ -26,8 +26,6 @@ export const actions: Actions = {
 		const contactForm = await superValidate(event, contactSchema);
 
 		if (!contactForm.valid) {
-			console.log("Inside !contactForm.valid");
-			console.log(contactForm);
 			return fail(400, { contactForm });
 		}
 
