@@ -37,7 +37,7 @@ export const actions: Actions = {
 				? contactForm.data.contactEmail
 				: contactForm.data.contactPhoneNumber;
 
-		const contactMessage = contactForm.data.contactMessage;
+		const contactMessage = contactForm.data.contactMessage || "Keine Nachricht hinterlassen.";
 
 		const embed = {
 			color: 5351105,
