@@ -37,6 +37,7 @@
 		<div class="text-primary-300">
 			<label class="mb-2 text-sm" for="contactName"> Ihr Name </label>
 			<input
+				class:invalid={$errors.contactName}
 				class="w-full rounded-full bg-surface-900 p-3 outline outline-2 outline-primary-500"
 				type="text"
 				required
@@ -46,6 +47,9 @@
 				name="contactName"
 				id="contactName"
 			/>
+			{#if $errors.contactName}
+				{$errors.contactName}
+			{/if}
 		</div>
 		<div class="flex items-center justify-between text-primary-300">
 			<p class="text-sm">Wie möchten Sie kontaktiert werden?</p>
@@ -72,6 +76,7 @@
 			<div class="text-primary-300">
 				<label class="mb-2 text-sm" for="contactEmail"> Ihre E-Mail Adresse </label>
 				<input
+					class:invalid={$errors.contactEmail}
 					class="w-full rounded-full bg-surface-900 p-3 outline outline-2 outline-primary-500"
 					type="email"
 					required
@@ -81,11 +86,15 @@
 					name="contactEmail"
 					id="contactEmail"
 				/>
+				{#if $errors.contactEmail}
+					{$errors.contactEmail}
+				{/if}
 			</div>
 		{:else}
 			<div class="text-primary-300">
 				<label class="mb-2 text-sm" for="contactPhoneNumber"> Ihre Telefonnummer </label>
 				<input
+					class:invalid={$errors.contactPhoneNumber}
 					class="w-full rounded-full bg-surface-900 p-3 outline outline-2 outline-primary-500"
 					type="tel"
 					required
@@ -95,6 +104,9 @@
 					name="contactPhoneNumber"
 					id="contactPhoneNumber"
 				/>
+				{#if $errors.contactPhoneNumber}
+					{$errors.contactPhoneNumber}
+				{/if}
 			</div>
 		{/if}
 
