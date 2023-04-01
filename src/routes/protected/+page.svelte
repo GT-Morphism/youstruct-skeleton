@@ -5,7 +5,7 @@
 </script>
 
 <section
-	class="grid min-h-[60dvh] grid-cols-2 place-items-center gap-x-8"
+	class="grid min-h-[40dvh] grid-cols-2 place-items-center gap-x-8"
 	role="contentinfo"
 	aria-label="YouStruct: Alles, was Du für Deine Zukunft in der Baubranche brauchst."
 >
