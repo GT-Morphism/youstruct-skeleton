@@ -12,11 +12,15 @@ const contactSchema = z.object({
 		.min(1, { message: "Ihr Name muss mindestens einen Buchstaben enthalten." }),
 	contactEmail: z
 		.string({ required_error: "Sie müssen eine E-Mail Adresse angeben." })
+		.trim()
 		.email({ message: "Überprüfen Sie Ihre E-Mail Adresse; etwas scheint nicht zu stimmen." })
 		.optional(),
 	wantsToBeContactedWith: z.enum(["E-Mail", "Telefonnummer"]),
 	contactPhoneNumber: z
 		.string({ required_error: "Sie müssen eine gültige Telefonnummer angeben." })
+		.trim()
+		.min(7, { message: "Überprüfen Sie Ihre Telefonnummer; sie scheint zu kurz zu sein." })
+		.max(15, { message: "Überprüfen Sie Ihre Telefonnummer; sie scheint zu lang zu sein." })
 		.optional(),
 	contactMessage: z.string().optional(),
 });
