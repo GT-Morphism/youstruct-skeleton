@@ -53,7 +53,7 @@
 	//#### OTHER ####
 </script>
 
-<AppBar>
+<AppBar class="[&>div]:mx-auto [&>div]:w-full [&>div]:max-w-[100rem] [&>div]:px-10">
 	<svelte:fragment slot="lead"
 		><a class="focus-primary" href="/protected">YouStruct</a></svelte:fragment
 	>
