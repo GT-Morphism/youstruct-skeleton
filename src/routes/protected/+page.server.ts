@@ -7,10 +7,17 @@ import { z } from "zod";
 import { superValidate } from "sveltekit-superforms/server";
 
 const contactSchema = z.object({
-	contactName: z.string().min(5),
-	contactEmail: z.string().email().optional(),
+	contactName: z
+		.string({ required_error: "Sie müssen einen Namen angeben." })
+		.min(1, { message: "Ihr Name muss mindestens einen Buchstaben enthalten." }),
+	contactEmail: z
+		.string({ required_error: "Sie müssen eine E-Mail Adresse angeben." })
+		.email({ message: "Überprüfen Sie Ihre E-Mail Adresse; etwas scheint nicht zu stimmen." })
+		.optional(),
 	wantsToBeContactedWith: z.enum(["E-Mail", "Telefonnummer"]),
-	contactPhoneNumber: z.string().optional(),
+	contactPhoneNumber: z
+		.string({ required_error: "Sie müssen eine gültige Telefonnummer angeben." })
+		.optional(),
 	contactMessage: z.string().optional(),
 });
 
