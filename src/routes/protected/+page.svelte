@@ -39,6 +39,8 @@
 </section>
 
 <section role="contentinfo" aria-label="Eine Plattform. Tausend Möglichkeiten">
-	<h2 class="gradient-text-color text-center !text-6xl">Eine Plattform. Tausend Möglichkeiten.</h2>
+	<h2 class="gradient-text-color mb-20 text-center !text-6xl">
+		Eine Plattform. Tausend Möglichkeiten.
+	</h2>
 	<AccordionWithImageToggle {accordionContent} />
 </section>

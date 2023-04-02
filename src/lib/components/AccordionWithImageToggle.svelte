@@ -31,7 +31,7 @@
 	}
 </script>
 
-<div class="grid min-h-[40dvh] grid-cols-2 place-items-center gap-x-8">
+<div class="grid min-h-[35rem] grid-cols-2 place-items-center gap-x-8">
 	{#if imageToShow == 1}
 		<img
 			in:fade={{ duration: duration }}
