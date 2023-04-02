@@ -72,15 +72,13 @@
 	>
 		{#each accordionContent as accordionContentItem, index (index)}
 			<AccordionItem
+				id={index.toString()}
 				on:click={() => changeImageToShow(index + 1)}
-				class="[&>button]:focus-primary"
+				class="[&>button[aria-expanded='false']>.accordion-lead]:text-[rgb(var(--color-primary-500))] [&>button[aria-expanded='true']>.accordion-lead]:text-[rgb(var(--color-success-500))]"
 				open={index == 0}
 			>
 				<svelte:fragment slot="lead"
-					><svelte:component
-						this={accordionIconCollection[accordionContentItem.iconName]}
-						fillColor="rgb(var(--color-primary-500))"
-					/>
+					><svelte:component this={accordionIconCollection[accordionContentItem.iconName]} />
 				</svelte:fragment>
 				<svelte:fragment slot="summary">{accordionContentItem.summary}</svelte:fragment>
 				<svelte:fragment slot="content">{accordionContentItem.content}</svelte:fragment>
