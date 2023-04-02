@@ -37,7 +37,7 @@
 <Modal data={data.contactForm} />
 
 {#if $page.url.pathname != "/" && $page.error?.message != "Not Found"}
-	<header><MainNavigation /></header>
+	<header class="mb-24"><MainNavigation /></header>
 {/if}
 
 <main class="mx-auto max-w-[100rem] p-8">
