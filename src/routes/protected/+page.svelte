@@ -1,11 +1,13 @@
 <script lang="ts">
-	import abstractBuildingHero from "$lib/assets/abstract-building-hero.jpg";
+	import abstractBuildingHero from "$lib/assets/homepage/abstract-building-hero.jpg";
+	import AccordionWithImageToggle from "$lib/components/AccordionWithImageToggle.svelte";
 	import TextWithIcon from "$lib/components/TextWithIcon.svelte";
-	import { heroTeaserStrings } from "$lib/content/homepage";
+
+	import { heroTeaserStrings, accordionContent } from "$lib/content/homepage";
 </script>
 
 <section
-	class="grid min-h-[40dvh] grid-cols-2 place-items-center gap-x-8"
+	class="mb-48 grid grid-cols-2 place-items-center gap-x-8"
 	role="contentinfo"
 	aria-label="YouStruct: Alles, was Du für Deine Zukunft in der Baubranche brauchst."
 >
@@ -34,4 +36,9 @@
 		src={abstractBuildingHero}
 		alt="Außenfassade des Wolkenkratzers Tuletornen in Schweden"
 	/>
+</section>
+
+<section role="contentinfo" aria-label="Eine Plattform. Tausend Möglichkeiten">
+	<h2 class="gradient-text-color text-center !text-6xl">Eine Plattform. Tausend Möglichkeiten.</h2>
+	<AccordionWithImageToggle {accordionContent} />
 </section>
