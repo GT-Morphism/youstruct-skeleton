@@ -32,3 +32,25 @@ export const accordionContent: accordionContentItem[] = [
 		content: "Schalte für jeden Freund, der sich Deinerwegen anmeldet, exklusive Inhalte frei.",
 	},
 ];
+
+export const homepageStepperContent: homepageStepperContentItem[] = [
+	{
+		header: "Profil erstellen",
+		content:
+			"Du erstellst einfach Dein Profil. Wir suchen die perfekten Jobs, Praktikas und Co für Dich heraus.",
+	},
+	{
+		header: "Zugang zu exklusivem Lernmaterial",
+		content:
+			"Du bekommst kostenfrei Lerninhalte, praktische Videos und Tipps vom Job; erstellt von Altgesellen und Ingenieuren.",
+	},
+	{
+		header: "Passende Firma meldet sich bei Dir",
+		content: "Lehne Dich zurück: Die besten Firmen aus Deiner Region melden sich bei Dir.",
+	},
+	{
+		header: "Gemeinsam mit Freunden die Erfahrung teilen",
+		content:
+			"Schalte exklusive Inhalte, wie zusätzliche Lernvideos frei und erhöhe die Anzahl an Firmen, die sich bei Dir melden, in dem Du mit Deinen Freunden zusammen lernst.",
+	},
+];
