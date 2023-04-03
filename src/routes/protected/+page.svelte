@@ -1,9 +1,14 @@
 <script lang="ts">
 	import abstractBuildingHero from "$lib/assets/homepage/abstract-building-hero.jpg";
 	import AccordionWithImageToggle from "$lib/components/AccordionWithImageToggle.svelte";
+	import HomepageStepper from "$lib/components/HomepageStepper.svelte";
 	import TextWithIcon from "$lib/components/TextWithIcon.svelte";
 
-	import { heroTeaserStrings, accordionContent } from "$lib/content/homepage";
+	import {
+		heroTeaserStrings,
+		accordionContent,
+		homepageStepperContent,
+	} from "$lib/content/homepage";
 </script>
 
 <section
@@ -43,4 +48,11 @@
 		Eine Plattform. Tausend Möglichkeiten.
 	</h2>
 	<AccordionWithImageToggle {accordionContent} />
+</section>
+
+<section role="contentinfo" aria-label="In weniger als 3 Minuten loslegen">
+	<h2 class="gradient-text-color mb-20 text-center !text-6xl/normal">
+		In weniger als 3 Minuten loslegen
+	</h2>
+	<HomepageStepper {homepageStepperContent} />
 </section>
