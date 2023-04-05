@@ -54,3 +54,33 @@ export const homepageStepperContent: homepageStepperContentItem[] = [
 			"Schalte exklusive Inhalte, wie zusätzliche Lernvideos frei und erhöhe die Anzahl an Firmen, die sich bei Dir melden, in dem Du mit Deinen Freunden zusammen lernst.",
 	},
 ];
+
+export const testimonialContent: testimonialContentItem[] = [
+	{
+		testimonialName: "Shawn Roberts",
+		testimonialInitials: "SR",
+		testimonialAge: 18,
+		testimonialPosition: "Maurer Azubi",
+		testimonialOpinionSummary: "YouStruct ist einfach nur unglaublich",
+		testimonialOpinionContent:
+			"Ich werde in meiner Firma richtig wertgeschätzt. Die Lernunterlagen helfen mir enorm.",
+	},
+	{
+		testimonialName: "Tarik der Player",
+		testimonialInitials: "TP",
+		testimonialAge: 69,
+		testimonialPosition: "Johnny Sinns der Baubranche",
+		testimonialOpinionSummary: "Ich knalle euch alle weg",
+		testimonialOpinionContent:
+			"Als Johny Sinns der Baubranche sorge ich dafür, dass die YouStruct-Community jeden Wunsch erfüllt bekommt.",
+	},
+	{
+		testimonialName: "Richy der Schlawiner",
+		testimonialInitials: "RS",
+		testimonialAge: 99,
+		testimonialPosition: "Frauen abchecken",
+		testimonialOpinionSummary: "Diesen Trick hassen Investoren",
+		testimonialOpinionContent:
+			"YouStruct macht aus Jungen richtige Männer. Sie bekommen nicht nur Lernmaterial für die Baubranche, sondern auch das Know-How über das andere Geschlecht.",
+	},
+];
