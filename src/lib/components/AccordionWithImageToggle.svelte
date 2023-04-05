@@ -62,7 +62,7 @@
 		/>
 	{/if}
 	<Accordion
-		class="w-full"
+		class="w-full max-w-[70ch]"
 		regionControl="variant-glass-primary"
 		padding="p-4"
 		spacing="space-y-4"
@@ -74,7 +74,7 @@
 			<AccordionItem
 				id={index.toString()}
 				on:click={() => changeImageToShow(index + 1)}
-				class="[&>button[aria-expanded='false']>.accordion-lead]:text-[rgb(var(--color-primary-500))] [&>button[aria-expanded='true']>.accordion-lead]:text-[rgb(var(--color-success-500))]"
+				class="text-xl [&>button[aria-expanded='false']>.accordion-lead]:text-[rgb(var(--color-primary-500))] [&>button[aria-expanded='true']>.accordion-lead]:text-[rgb(var(--color-success-500))]"
 				open={index == 0}
 			>
 				<svelte:fragment slot="lead"

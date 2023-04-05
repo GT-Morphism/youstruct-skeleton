@@ -16,7 +16,7 @@
 	role="contentinfo"
 	aria-label="YouStruct: Alles, was Du für Deine Zukunft in der Baubranche brauchst."
 >
-	<div class="flex flex-col gap-y-8">
+	<div class="flex max-w-[70ch] flex-col gap-y-8">
 		<h1>
 			Alles, was Du für <span class="gradient-text-color-primary">Deine Zukunft</span> in der Baubranche
 			brauchst.
