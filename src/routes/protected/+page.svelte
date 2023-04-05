@@ -1,5 +1,6 @@
 <script lang="ts">
 	import abstractBuildingHero from "$lib/assets/homepage/abstract-building-hero.jpg";
+	import focusOnYourself from "$lib/assets/homepage/youstruct-homepage-focus-on-yourself.jpg";
 	import AccordionWithImageToggle from "$lib/components/AccordionWithImageToggle.svelte";
 	import HomepageStepper from "$lib/components/HomepageStepper.svelte";
 	import TextWithIcon from "$lib/components/TextWithIcon.svelte";
@@ -56,4 +57,28 @@
 		In weniger als 3 Minuten loslegen
 	</h2>
 	<HomepageStepper {homepageStepperContent} />
+</section>
+
+<section
+	class="mb-48 grid grid-cols-2 place-items-center gap-x-8"
+	role="contentinfo"
+	aria-label="Während Du lernst, suchen wir den perfekten Job für Dich"
+>
+	<img
+		class="shadow-sm shadow-primary-500 rounded-container-token"
+		src={focusOnYourself}
+		alt="Außenfassade des Wolkenkratzers Tuletornen in Schweden"
+	/>
+	<div class="flex max-w-[70ch] flex-col gap-y-8">
+		<h2 class="!text-5xl">
+			Während Du lernst, suchen wir den <span class="gradient-text-color-primary"
+				>perfekten Job</span
+			> für Dich.
+		</h2>
+		<p class="!text-xl">
+			Warum Zeit mit Bewerbungsschreiben verschwenden, wenn Du Dich stattdessen auch auf Dich
+			konzentrieren kannst und sich Firmen bei Dir melden?
+		</p>
+		<button class="btn variant-ghost-success self-start">Anmelden</button>
+	</div>
 </section>
