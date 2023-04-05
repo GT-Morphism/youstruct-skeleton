@@ -10,7 +10,9 @@
 		heroTeaserStrings,
 		accordionContent,
 		homepageStepperContent,
+		testimonialContent,
 	} from "$lib/content/homepage";
+	import HomepageTestimonials from "$lib/components/HomepageTestimonials.svelte";
 </script>
 
 <BasicTwoColumns ariaLabel="YouStruct: Alles, was Du für Deine Zukunft in der Baubranche brauchst.">
@@ -79,6 +81,24 @@
 			<p class="!text-xl">
 				Warum Zeit mit Bewerbungsschreiben verschwenden, wenn Du Dich stattdessen auch auf Dich
 				konzentrieren kannst und sich Firmen bei Dir melden?
+			</p>
+			<button class="btn variant-ghost-success self-start">Anmelden</button>
+		</div>
+	</svelte:fragment>
+</BasicTwoColumns>
+
+<BasicTwoColumns ariaLabel="Bau auf die Meinung anderer Nutzer">
+	<svelte:fragment slot="rightColumn">
+		<HomepageTestimonials {testimonialContent} />
+	</svelte:fragment>
+	<svelte:fragment slot="leftColumn">
+		<div class="flex max-w-[70ch] flex-col gap-y-8">
+			<h2 class="!text-5xl">
+				Bau auf die <span class="gradient-text-color-primary">Meinung anderer Nutzer</span>
+			</h2>
+			<p class="!text-xl">
+				<span class="gradient-text-color-success">93% aller Nutzer bei YouStruct</span> haben einen coolen
+				und sicheren Job gefunden und sind von dem entspannten Bewerbungsprozess begeistert.
 			</p>
 			<button class="btn variant-ghost-success self-start">Anmelden</button>
 		</div>
