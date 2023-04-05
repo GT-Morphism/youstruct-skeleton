@@ -37,13 +37,26 @@ a.focus-error:focus-visible {
 /* #### UTILITY CLASSES #### */
 
 /* ## TYPOGRAPHY ## */
-.gradient-text-color {
+.gradient-text-color-primary {
 	background-image: linear-gradient(
 		90deg,
 		rgba(var(--color-primary-500)) 0%,
 		rgba(var(--color-primary-400)) 60%,
 		rgba(var(--color-primary-300)) 80%,
 		rgba(var(--color-primary-200)) 100%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.gradient-text-color-success {
+	background-image: linear-gradient(
+		90deg,
+		rgba(var(--color-success-500)) 0%,
+		rgba(var(--color-success-400)) 60%,
+		rgba(var(--color-success-300)) 80%,
+		rgba(var(--color-success-200)) 100%
 	);
 	background-clip: text;
 	-webkit-background-clip: text;

@@ -26,7 +26,7 @@
 	use:enhance
 >
 	<h2 class="text-center !text-5xl">
-		<span class="gradient-text-color"> Bautalente </span> sind ein Gespräch entfernt
+		<span class="gradient-text-color-primary"> Bautalente </span> sind ein Gespräch entfernt
 	</h2>
 	<p class="mb-8 self-center text-center">Schreiben Sie uns und wir übernehmen den Rest.</p>
 	<p class="!text-sm text-gray-400">

@@ -18,11 +18,12 @@
 >
 	<div class="flex flex-col gap-y-8">
 		<h1>
-			Alles, was Du für <span class="gradient-text-color">Deine Zukunft</span> in der Baubranche brauchst.
+			Alles, was Du für <span class="gradient-text-color-primary">Deine Zukunft</span> in der Baubranche
+			brauchst.
 		</h1>
 		<p class="!text-xl">
 			Noch nie war das Finden eines Jobs so einfach. Erstelle Dir ein Profil, nutze die Vorteile und
-			<span class="gradient-text-color">werde zum Bauhelden</span>.
+			<span class="gradient-text-color-success">werde zum Bauhelden</span>.
 		</p>
 		<div class="grid grid-cols-2 grid-rows-3 gap-y-4">
 			{#each heroTeaserStrings as heroTeaserString}
@@ -44,14 +45,14 @@
 </section>
 
 <section class="mb-48" role="contentinfo" aria-label="Eine Plattform. Tausend Möglichkeiten">
-	<h2 class="gradient-text-color mb-20 text-center !text-6xl/normal">
+	<h2 class="gradient-text-color-primary mb-20 text-center !text-6xl/normal">
 		Eine Plattform. Tausend Möglichkeiten.
 	</h2>
 	<AccordionWithImageToggle {accordionContent} />
 </section>
 
-<section role="contentinfo" aria-label="In weniger als 3 Minuten loslegen">
-	<h2 class="gradient-text-color mb-20 text-center !text-6xl/normal">
+<section class="mb-48" role="contentinfo" aria-label="In weniger als 3 Minuten loslegen">
+	<h2 class="gradient-text-color-primary mb-20 text-center !text-6xl/normal">
 		In weniger als 3 Minuten loslegen
 	</h2>
 	<HomepageStepper {homepageStepperContent} />
