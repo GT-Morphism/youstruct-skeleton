@@ -1,18 +1,38 @@
 <script lang="ts">
+	// #### ASSETS ####
 	import abstractBuildingHero from "$lib/assets/homepage/abstract-building-hero.jpg";
 	import focusOnYourself from "$lib/assets/homepage/youstruct-homepage-focus-on-yourself.jpg";
-	import AccordionWithImageToggle from "$lib/components/AccordionWithImageToggle.svelte";
-	import HomepageStepper from "$lib/components/HomepageStepper.svelte";
-	import TextWithIcon from "$lib/components/TextWithIcon.svelte";
-	import BasicTwoColumns from "$lib/components/BasicTwoColumns.svelte";
-
 	import {
 		heroTeaserStrings,
 		accordionContent,
 		homepageStepperContent,
 		testimonialContent,
+		overviewContent,
 	} from "$lib/content/homepage";
+
+	// #### CUSTOM COMPONENTS ####
+	import BasicTwoColumns from "$lib/components/BasicTwoColumns.svelte";
+	import AccordionWithImageToggle from "$lib/components/AccordionWithImageToggle.svelte";
+	import HomepageStepper from "$lib/components/HomepageStepper.svelte";
+	import TextWithIcon from "$lib/components/TextWithIcon.svelte";
 	import HomepageTestimonials from "$lib/components/HomepageTestimonials.svelte";
+	import BasicPopupCard from "$lib/components/BasicPopupCard.svelte";
+
+	// #### CUSTOM ICONS ####
+	import IconCreateProfil from "$lib/components/icons/IconCreateProfil.svelte";
+	import IconStudyMaterial from "$lib/components/icons/IconStudyMaterial.svelte";
+	import IconBusinessContact from "$lib/components/icons/IconBusinessContact.svelte";
+	import IconTogetherWithFriends from "$lib/components/icons/IconTogetherWithFriends.svelte";
+
+	import type { SvelteComponent } from "svelte";
+	type OverviewIconCollection = Record<string, typeof SvelteComponent>;
+
+	const overviewIconCollection: OverviewIconCollection = {
+		IconCreateProfil,
+		IconStudyMaterial,
+		IconBusinessContact,
+		IconTogetherWithFriends,
+	};
 </script>
 
 <BasicTwoColumns ariaLabel="YouStruct: Alles, was Du für Deine Zukunft in der Baubranche brauchst.">
