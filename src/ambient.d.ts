@@ -17,3 +17,9 @@ interface testimonialContentItem {
 	testimonialOpinionSummary: string;
 	testimonialOpinionContent: string;
 }
+
+interface overviewContentItem {
+	iconName: string;
+	buttonDescription: string;
+	popupContent: string;
+}
