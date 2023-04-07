@@ -4,11 +4,11 @@
 	export let gradientColorEnd: string = "rgb(var(--color-success-500))";
 	export let iconToShow: number = 1;
 	export let duration: number = 200;
-	export let width: string = "";
-	export let height: string = "";
+	export let width: string = "100%";
+	export let height: string = "100%";
 </script>
 
-<svg {width} {height} viewBox="0 0 595 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg {width} {height} viewBox="0 0 595 54" fill="none">
 	{#if iconToShow >= 1}
 		<g id="step-1">
 			<path
