@@ -126,7 +126,7 @@
 </BasicTwoColumns>
 
 <section
-	class="relative mb-48 flex min-h-[30rem] flex-col items-center justify-center"
+	class="relative mb-48 flex flex-col items-center justify-center"
 	role="contentinfo"
 	aria-label="YouStruct im Überblick"
 >
