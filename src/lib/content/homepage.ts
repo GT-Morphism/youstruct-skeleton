@@ -84,3 +84,30 @@ export const testimonialContent: testimonialContentItem[] = [
 			"YouStruct macht aus Jungen richtige Männer. Sie bekommen nicht nur Lernmaterial für die Baubranche, sondern auch das Know-How über das andere Geschlecht.",
 	},
 ];
+
+export const overviewContent: overviewContentItem[] = [
+	{
+		iconName: "IconCreateProfile",
+		buttonDescription: "Profil erstellen",
+		popupContent:
+			"Mit viel Mühe haben wir dafür gesorgt, dass der Anmeldeprozess reibungslos verläuft und sogar Spaß macht. Selbst wenn Du Dich für den Rest nicht interessierst, ist die Anmeldung an sich eine lohnenswerte Erfahrung.",
+	},
+	{
+		iconName: "IconStudyMaterial",
+		buttonDescription: "Vorteile nutzen",
+		popupContent:
+			"Nach der Anmeldung stehen Dir Lernmaterialien höchster Qualität zur Verfügung. Du bekommst auch Zugang zu unserem Discord-Server, auf dem Du Gleichgesinnte treffen kannst. Und natürlich kannst Du Dich über Unternehmen in Deiner Nähe informieren.",
+	},
+	{
+		iconName: "IconBusinessContact",
+		buttonDescription: "Firmen schreiben Dich an",
+		popupContent:
+			"Du sollst Dich auf das Schärfen Deiner eigenen Skills konzentrieren (und das musst Du ernst nehmen). Sofern Du uns Deine Zustimmung gibst, bekommen Unternehmen Einblicke in Deine Fähigkeiten. Ist das Interesse vorhanden, melden sich Unternehmen dann bei Dir.",
+	},
+	{
+		iconName: "IconTogetherWithFriends",
+		buttonDescription: "Teile Deine Erfahrung",
+		popupContent:
+			"Wenn Dir die Erfahrung mit uns gefallen hat, dann teile sie doch mit all Deinen Freunden und Bekannten, die sich vielleicht in einer ähnlichen Situation wie Du befinden. Sollte Deine Erfahrung jedoch negativ sein, so zögere nicht und kontaktiere uns direkt.",
+	},
+];
