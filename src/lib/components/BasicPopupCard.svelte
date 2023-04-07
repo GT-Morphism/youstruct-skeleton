@@ -57,7 +57,7 @@
 		<div class="overview-popup-overlay fixed inset-0" />
 		<div transition:fade class="absolute bottom-0 left-[50%] top-0 -translate-x-[50%]">
 			<div
-				class="flex h-full max-w-[60ch] flex-col items-center justify-center gap-y-8 bg-surface-800 p-8 text-center outline outline-2 outline-surface-600 rounded-container-token"
+				class="flex min-h-[30rem] max-w-[60rem] flex-col items-center justify-center gap-y-8 bg-surface-800 p-24 text-center outline outline-2 outline-surface-600 rounded-container-token"
 			>
 				<h3 class="gradient-text-color-success !text-4xl">{buttonDescription}</h3>
 				<p class="!text-xl">{popupContent}</p>
