@@ -143,3 +143,28 @@
 		{/each}
 	</div>
 </section>
+
+<section
+	class="relative mb-48 flex flex-col items-center justify-center text-center"
+	role="contentinfo"
+	aria-label="Talente der Baubranche haben ein zu Hause: YouStruct."
+>
+	<h2 class="gradient-text-color-primary mb-20 !text-6xl/normal">
+		Talente der Baubranche haben ein zu Hause: YouStruct.
+	</h2>
+	<div class="flex flex-col items-center justify-center gap-y-8">
+		<p
+			class="max-w-[60rem] p-24 !text-5xl shadow-[0_0_2px_2px] shadow-error-600 outline outline-2 outline-surface-700 rounded-container-token"
+		>
+			Unsere Mission ist es die <span class="gradient-text-color-success"
+				>Zukunft der Baubranche</span
+			>
+			modern und zukunftsgerecht zu gestalten, indem wir der Bauzukunft eine
+			<span class="gradient-text-color-success">Stimme</span> schenken.
+		</p>
+		<div>
+			<a class="btn variant-ghost-error mb-2" href="/protected/ueber-uns">Unsere Philosophie</a>
+			<p class="!text-sm text-gray-400">#makehandwerkgreatagain</p>
+		</div>
+	</div>
+</section>
