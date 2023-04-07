@@ -124,3 +124,22 @@
 		</div>
 	</svelte:fragment>
 </BasicTwoColumns>
+
+<section
+	class="relative mb-48 flex min-h-[30rem] flex-col items-center justify-center"
+	role="contentinfo"
+	aria-label="YouStruct im Überblick"
+>
+	<h2 class="gradient-text-color-primary mb-20 text-center !text-6xl/normal">
+		YouStruct im Überblick
+	</h2>
+	<div class="flex gap-x-24">
+		{#each overviewContent as overviewContentItem}
+			<BasicPopupCard
+				CardIcon={overviewIconCollection[overviewContentItem.iconName]}
+				buttonDescription={overviewContentItem.buttonDescription}
+				popupContent={overviewContentItem.popupContent}
+			/>
+		{/each}
+	</div>
+</section>
