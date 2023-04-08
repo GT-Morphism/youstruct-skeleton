@@ -8,6 +8,7 @@
 		homepageStepperContent,
 		testimonialContent,
 		overviewContent,
+		faqContent,
 	} from "$lib/content/homepage";
 
 	// #### CUSTOM COMPONENTS ####
@@ -17,6 +18,7 @@
 	import TextWithIcon from "$lib/components/TextWithIcon.svelte";
 	import HomepageTestimonials from "$lib/components/HomepageTestimonials.svelte";
 	import BasicPopupCard from "$lib/components/BasicPopupCard.svelte";
+	import FAQAccordion from "$lib/components/FAQAccordion.svelte";
 
 	// #### CUSTOM ICONS ####
 	import IconCreateProfil from "$lib/components/icons/IconCreateProfil.svelte";
@@ -167,4 +169,13 @@
 			<p class="!text-sm text-gray-400">#makehandwerkgreatagain</p>
 		</div>
 	</div>
+</section>
+
+<section
+	class="relative mb-48 flex flex-col items-center justify-center"
+	role="contentinfo"
+	aria-label="Häufig gestellte Fragen (FAQ)"
+>
+	<h2 class="gradient-text-color-primary mb-20 !text-6xl/normal">Häufig gestellte Fragen (FAQ)</h2>
+	<FAQAccordion {faqContent} />
 </section>
