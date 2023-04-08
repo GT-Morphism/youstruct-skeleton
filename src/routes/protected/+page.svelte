@@ -71,14 +71,14 @@
 	</svelte:fragment>
 </BasicTwoColumns>
 
-<section class="mb-48" role="contentinfo" aria-label="Eine Plattform. Tausend Möglichkeiten">
+<section class="mb-48" aria-label="Eine Plattform. Tausend Möglichkeiten">
 	<h2 class="gradient-text-color-primary mb-20 text-center !text-6xl/normal">
 		Eine Plattform. Tausend Möglichkeiten.
 	</h2>
 	<AccordionWithImageToggle {accordionContent} />
 </section>
 
-<section class="mb-48" role="contentinfo" aria-label="In weniger als 3 Minuten loslegen">
+<section class="mb-48" aria-label="In weniger als 3 Minuten loslegen">
 	<h2 class="gradient-text-color-primary mb-20 text-center !text-6xl/normal">
 		In weniger als 3 Minuten loslegen
 	</h2>
@@ -129,7 +129,6 @@
 
 <section
 	class="relative mb-48 flex flex-col items-center justify-center"
-	role="contentinfo"
 	aria-label="YouStruct im Überblick"
 >
 	<h2 class="gradient-text-color-primary mb-20 text-center !text-6xl/normal">
@@ -148,7 +147,6 @@
 
 <section
 	class="relative mb-48 flex flex-col items-center justify-center text-center"
-	role="contentinfo"
 	aria-label="Talente der Baubranche haben ein zu Hause: YouStruct."
 >
 	<h2 class="gradient-text-color-primary mb-20 !text-6xl/normal">
@@ -173,7 +171,6 @@
 
 <section
 	class="relative mb-48 flex flex-col items-center justify-center"
-	role="contentinfo"
 	aria-label="Häufig gestellte Fragen (FAQ)"
 >
 	<h2 class="gradient-text-color-primary mb-20 !text-6xl/normal">Häufig gestellte Fragen (FAQ)</h2>
