@@ -25,6 +25,7 @@
 
 	//#### IMPORT OF CUSTOM COMPONENTS ####
 	import MainNavigation from "$lib/components/MainNavigation.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 
 	//#### ADAPT CUSTOM COMPONENTS ####
 
@@ -43,3 +44,7 @@
 <main class="mx-auto max-w-[100rem] p-8">
 	<slot />
 </main>
+
+{#if $page.url.pathname != "/" && $page.error?.message != "Not Found"}
+	<Footer />
+{/if}
