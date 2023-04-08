@@ -23,3 +23,12 @@ interface overviewContentItem {
 	buttonDescription: string;
 	popupContent: string;
 }
+
+interface faqContentItem {
+	question: string;
+	answer: string;
+	hasAnchorTag?: boolean;
+	anchorTagDescription?: string;
+	anchorTagURL?: string;
+	anchorTagStyle?: "primary" | "success" | "error";
+}
