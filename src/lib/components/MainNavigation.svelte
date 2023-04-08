@@ -4,9 +4,9 @@
 	//#### IMPORT OF NPM PACKAGES ####
 
 	//#### IMPORT OF SKELETON COMPONENTS ####
-	import { AppBar, LightSwitch, popup, modalStore } from "@skeletonlabs/skeleton";
+	import { AppBar, LightSwitch, popup } from "@skeletonlabs/skeleton";
 
-	import type { PopupSettings, ModalComponent, ModalSettings } from "@skeletonlabs/skeleton";
+	import type { PopupSettings } from "@skeletonlabs/skeleton";
 
 	//#### ADAPT SKELETON COMPONENTS ####
 	let discoverConstructionMenu: PopupSettings = {
@@ -33,18 +33,9 @@
 		},
 	};
 
-	function modalContact(): void {
-		const c: ModalComponent = { ref: ModalContact };
-		const d: ModalSettings = {
-			type: "component",
-			component: c,
-		};
-		modalStore.trigger(d);
-	}
-
 	//#### IMPORT OF CUSTOM COMPONENTS ####
 	import SubNavigationCard from "./SubNavigationCard.svelte";
-	import ModalContact from "./ModalContact.svelte";
+	import modalContact from "$lib/importContactModal";
 
 	//#### ADAPT CUSTOM COMPONENTS ####
 

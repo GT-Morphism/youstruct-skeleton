@@ -1,9 +1,7 @@
 <script lang="ts">
 	import { fade } from "svelte/transition";
-	import { modalStore } from "@skeletonlabs/skeleton";
-	import type { ModalComponent, ModalSettings } from "@skeletonlabs/skeleton";
 
-	import ModalContact from "./ModalContact.svelte";
+	import modalContact from "$lib/importContactModal";
 	import IconCreateProfil from "./icons/IconCreateProfil.svelte";
 
 	export let CardIcon: typeof IconCreateProfil | undefined = IconCreateProfil;
@@ -11,15 +9,6 @@
 	export let popupContent: string = "Hier stehen weitere Informationen.";
 
 	let isPopupVisible: boolean = false;
-
-	function modalContact(): void {
-		const c: ModalComponent = { ref: ModalContact };
-		const d: ModalSettings = {
-			type: "component",
-			component: c,
-		};
-		modalStore.trigger(d);
-	}
 
 	function onKeyDown(event: KeyboardEvent): void {
 		if (event.code == "Escape") {
