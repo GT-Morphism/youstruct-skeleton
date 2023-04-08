@@ -111,3 +111,31 @@ export const overviewContent: overviewContentItem[] = [
 			"Wenn Dir die Erfahrung mit uns gefallen hat, dann teile sie doch mit all Deinen Freunden und Bekannten, die sich vielleicht in einer ähnlichen Situation wie Du befinden. Sollte Deine Erfahrung jedoch negativ sein, so zögere nicht und kontaktiere uns direkt.",
 	},
 ];
+
+export const faqContent: faqContentItem[] = [
+	{
+		question: "Ist YouStruct wirklich kostenlos?",
+		answer:
+			"As <span class='gradient-text-color-success'>trees get older</span> they lose their chlorophyll. Let's make some happy little clouds in our world. See there how easy that is. We don't have anything but happy trees here. Maybe there's a happy little Evergreen that lives here. Use what you see, don't plan it.",
+	},
+	{
+		question: "Was geschieht mit meinen Daten?",
+		answer:
+			"This is the fun part Pretend you're water. Just floating without any effort. Having a good day. Only think about one thing at a time. Don't get greedy. You don't want to kill all your dark areas they are very important.",
+	},
+	{
+		question: "Wie erfahre ich, dass sich Firmen für mich interessieren?",
+		answer: `Everyone needs a friend. Friends are the most valuable things in the world. You need to have a very firm paint to do this. Little trees and bushes grow however makes them happy. Just go back and put one little more happy tree in there. Trees cover up a multitude of sins. Nature is so fantastic, enjoy it. Let it make you happy.
+		<br/><br/>
+		We have all at one time or another mixed some mud. We must be quiet, soft and gentle. Let your imagination be your guide. Let's make a happy little mountain now.`,
+	},
+	{
+		question: "Warum bietet ihr alles kostenlos an?",
+		answer:
+			"Isn't that fantastic that you can create an almighty tree that fast? Take your time. Speed will come later. We'll lay all these little funky little things in there. That's the way I look when I get home late; black and blue. Trees cover up a multitude of sins.",
+		hasAnchorTag: true,
+		anchorTagDescription: "Unsere Philosophie",
+		anchorTagURL: "/protected/ueber-uns",
+		anchorTagStyle: "error",
+	},
+];
