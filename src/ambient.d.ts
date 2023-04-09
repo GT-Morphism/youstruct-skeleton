@@ -32,3 +32,14 @@ interface faqContentItem {
 	anchorTagURL?: string;
 	anchorTagStyle?: "primary" | "success" | "error";
 }
+
+interface businessPageIntroItem {
+	iconID: number;
+	content: string;
+	areColumnsReversed?: boolean;
+}
+
+interface recruitmentContentItem {
+	title: string;
+	content: string;
+}
