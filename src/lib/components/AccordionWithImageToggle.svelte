@@ -35,28 +35,24 @@
 	{#if imageToShow == 1}
 		<img
 			in:fade={{ duration: duration }}
-			class="shadow-sm shadow-primary-500 rounded-container-token"
 			src={fittingJob}
-			alt="Ein Mann mit einer Schlafmaschine und Funken, die dem Betrachter des Bildes in die Augen springen."
+			alt="Ein Mann mit einer Schleifmaschine und Funken, die dem Betrachter des Bildes in die Augen springen."
 		/>
 	{:else if imageToShow == 2}
 		<img
 			in:fade={{ duration: duration }}
-			class="shadow-sm shadow-primary-500 rounded-container-token"
 			src={modernTech}
 			alt="Ein halb geöffneter MacBook mit einem farbfrohen Bildschirm-Hintergrund in einem dunklen Raum."
 		/>
 	{:else if imageToShow == 3}
 		<img
 			in:fade={{ duration: duration }}
-			class="shadow-sm shadow-primary-500 rounded-container-token"
 			src={examMaterials}
 			alt="Eine Bibliothek in einem Vintage-Style mit Skulpturen von wichtigen Intellektuellen"
 		/>
 	{:else if imageToShow == 4}
 		<img
 			in:fade={{ duration: duration }}
-			class="shadow-sm shadow-primary-500 rounded-container-token"
 			src={inviteFriends}
 			alt="Zwei Menschen sind gerade dabei, sich die Hand zu geben."
 		/>
