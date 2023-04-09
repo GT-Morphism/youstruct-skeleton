@@ -132,6 +132,11 @@
 				</div>
 			</div>
 		</div>
+		<!-- Für Unternehmen -->
+		<a
+			class="focus-tertiary p-2 transition-all hover:variant-ghost-tertiary"
+			href="/protected/fuer-unternehmen">Für Unternehmen</a
+		>
 		<!-- Über Uns -->
 		<a class="focus-error p-2 transition-all hover:variant-ghost-error" href="/protected/ueber-uns"
 			>Über Uns</a
