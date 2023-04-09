@@ -63,11 +63,7 @@
 		</div>
 	</svelte:fragment>
 	<svelte:fragment slot="rightColumn">
-		<img
-			class="shadow-sm shadow-primary-500 rounded-container-token"
-			src={abstractBuildingHero}
-			alt="Außenfassade des Wolkenkratzers Tuletornen in Schweden"
-		/>
+		<img src={abstractBuildingHero} alt="Außenfassade des Wolkenkratzers Tuletornen in Schweden" />
 	</svelte:fragment>
 </BasicTwoColumns>
 
@@ -88,9 +84,8 @@
 <BasicTwoColumns ariaLabel="Während Du lernst, suchen wir den perfekten Job für Dich">
 	<svelte:fragment slot="leftColumn">
 		<img
-			class="shadow-sm shadow-primary-500 rounded-container-token"
 			src={focusOnYourself}
-			alt="Außenfassade des Wolkenkratzers Tuletornen in Schweden"
+			alt="Ein Macbook mit der Uhrzeit 11:11 PM befindet sich auf einen Schreibtisch in einem dunklen Raum."
 		/>
 	</svelte:fragment>
 	<svelte:fragment slot="rightColumn">
@@ -146,7 +141,7 @@
 </section>
 
 <section
-	class="relative mb-48 flex flex-col items-center justify-center text-center"
+	class="mb-48 flex flex-col items-center justify-center text-center"
 	aria-label="Talente der Baubranche haben ein zu Hause: YouStruct."
 >
 	<h2 class="gradient-text-color-primary mb-20 !text-6xl/normal">
@@ -170,7 +165,7 @@
 </section>
 
 <section
-	class="relative mb-48 flex flex-col items-center justify-center"
+	class="mb-48 flex flex-col items-center justify-center"
 	aria-label="Häufig gestellte Fragen (FAQ)"
 >
 	<h2 class="gradient-text-color-primary mb-20 !text-6xl/normal">Häufig gestellte Fragen (FAQ)</h2>
