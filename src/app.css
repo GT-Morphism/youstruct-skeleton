@@ -1,4 +1,4 @@
-/* #### BUTTON AND ANCHOR TAGS FOCUS */
+/* #### BUTTON AND ANCHOR TAGS FOCUS #### */
 button:focus,
 a:focus {
 	@apply outline-none outline-offset-0;
@@ -27,6 +27,17 @@ a.focus-success:focus-visible {
 button.focus-error:focus-visible,
 a.focus-error:focus-visible {
 	@apply outline-2 outline-error-500;
+}
+
+button.focus-tertiary:focus-visible,
+a.focus-tertiary:focus-visible {
+	@apply outline-2 outline-tertiary-500;
+}
+
+/* #### IMAGES #### */
+
+img {
+	@apply shadow-sm shadow-primary-500 rounded-container-token;
 }
 
 /* #### UTILITY CLASSES #### */
