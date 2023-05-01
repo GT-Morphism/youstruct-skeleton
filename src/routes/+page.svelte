@@ -19,7 +19,7 @@
 	const welcomeLines: string[] = [
 		"YouStruct",
 		"",
-		"weil",
+		"geil",
 		"",
 		"es",
 		"",
